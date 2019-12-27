@@ -87,7 +87,7 @@
                     }
 
                     if ((chunks[i] - chunks[i - 1]) > this.seconds) {
-                        this.errors.push(` ${chunks[i - 1]}  =>  ${chunks[i]}  Чанк больше  ${this.seconds}  на:  ${(chunks[i] - chunks[i - 1]) - this.seconds}`);
+                        this.errors.push(` ${chunks[i - 1]}  =>  ${chunks[i]}  Чанк больше  ${this.seconds}  на:  ${this.seconds - (chunks[i] - chunks[i - 1]) }`);
                     }
 
                     if ((chunks[i] - chunks[i - 1]) < this.seconds) {
